@@ -60,10 +60,10 @@ let isPlaying = false;
 musicBtn.addEventListener("click", () => {
 	if (!isPlaying) {
 		music.play();
-		musicBtn.textContent = "🔈";
+		musicBtn.textContent = "🎶";
 	} else {
 		music.pause();
-		musicBtn.textContent = "🔊";
+		musicBtn.textContent = "🎵";
 	}
 	isPlaying = !isPlaying;
 });
@@ -78,4 +78,5 @@ function generateHearts() {
 	heartsContainer.appendChild(heart);
 	setTimeout(() => heart.remove(), 2000);
   }
+
 }
